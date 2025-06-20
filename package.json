@@ -1,0 +1,25 @@
+{
+  "name": "js-intro",
+  "version": "1.0.0",
+  "description": "- Variables - Store data in memory - Data Types      1. Primitive, examples: Strings, Numbers(Integers, Floats), Booleans(True and False), Null, undefined     2. Non-Primitive(Arrays and Objects)",
+  "main": "index.js",
+  "scripts": {
+
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2502-5-software/js-intro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/2502-5-software/js-intro/issues"
+  },
+  "homepage": "https://github.com/2502-5-software/js-intro#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
