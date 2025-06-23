@@ -1,3 +1,6 @@
+import promptSync from "prompt-sync";
+const prompt = promptSync();
+
 function sum(num1, num2){
     return num1 + num2;
 }
@@ -35,3 +38,42 @@ console.log(message(`Seth`));
 // const message= (name)=>`Hi, my name is ${name}.`;
 
 
+function validateEmail(email){
+    return email.includes("@") && email.endsWith(".com");
+}
+
+const userEmail = prompt("Enter your Email:");
+if (validateEmail(userEmail)){
+    console.log("valid email")
+}else {
+    console.log("Invalid email")
+}
+
+function calculateTotal(cartItems){
+    let total=0;
+    for(let item of cartItems){
+        total+=item.price * item.quantity;
+    }
+    return total;
+}
+
+const cart = [
+    {name: "T-shirts", price: 1200, quantity:3},
+    {name: "trousers", price: 1500, quantity:2},
+];
+
+console.log ("Total:", calculateTotal(cart))
+
+function getWinner(player,computer){
+    if (player == computer) return "Draw";
+    if (
+        (player == "rock" && computer =="scissors")||
+        (player== "scissors" && computer =="paper")||
+        (player == "paper" && computer =="rock")
+    ){
+        return "Player Wins!"
+    }
+    return "Computer Wins!"
+}
+
+console.log (getWinner("scissors", "rock"));
